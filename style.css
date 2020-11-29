@@ -1,10 +1,13 @@
-body{
-    background-image: url(bg.svg);
-    background-size: cover;
+body {
+  background-image: linear-gradient(to  left , #FEECE5, #D0D194);
 }
-#logo{
-    position: fixed;
-    left:40vw;
-    top:40vh;
-    width:20vw;
+#logo {
+  position: fixed;
+  left: calc(50vw - calc(10cm*0.5));
+  top: calc(50vh - calc(10cm*0.5));
+  /*width:20vw;*/
+}
+#text{
+    position:fixed;
+    
 }
