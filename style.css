@@ -1,0 +1,10 @@
+body{
+    background-image: url(bg.svg);
+    background-size: cover;
+}
+#logo{
+    position: fixed;
+    left:40vw;
+    top:40vh;
+    width:20vw;
+}
