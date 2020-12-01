@@ -42,19 +42,25 @@
      inkscape:window-height="656"
      id="namedview65"
      showgrid="false"
-     inkscape:zoom="2.4976667"
-     inkscape:cx="193.824"
-     inkscape:cy="235.10501"
+     inkscape:zoom="1.2488333"
+     inkscape:cx="114.88558"
+     inkscape:cy="239.19455"
      inkscape:window-x="0"
      inkscape:window-y="36"
      inkscape:window-maximized="1"
      inkscape:current-layer="icon" />
-  <circle
+  <path
      style="opacity:0.98000004;fill:#000000;fill-opacity:0.99285715;stroke:none;stroke-width:17.03768158;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
      id="path103"
-     cx="59.670788"
-     cy="60.098175"
-     r="43.270481" />
+     sodipodi:type="arc"
+     sodipodi:cx="59.670788"
+     sodipodi:cy="60.098175"
+     sodipodi:rx="43.270481"
+     sodipodi:ry="43.270481"
+     sodipodi:start="0"
+     sodipodi:end="4.7663318"
+     sodipodi:open="true"
+     d="M 102.94127,60.098175 A 43.270481,43.270481 0 0 1 75.689081,100.29455 43.270481,43.270481 0 0 1 28.259925,89.858757 43.270481,43.270481 0 0 1 20.39653,41.935927 43.270481,43.270481 0 0 1 62.003788,16.890633" />
   <circle
      cx="60"
      cy="60"
@@ -193,4 +199,11 @@
    id="tspan58"
    y="64.399399"
    x="52.912472">30</tspan>       </text>
+  <ellipse
+     style="opacity:0.98000004;fill:#000000;fill-opacity:0.99285715;stroke:none;stroke-width:14;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     id="path105"
+     cx="103.73941"
+     cy="61.398304"
+     rx="0.074152544"
+     ry="0.88983053" />
 </svg>
