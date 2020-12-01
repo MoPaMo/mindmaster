@@ -41,31 +41,41 @@ body {
     left: calc(65vw - calc(20vw * 0.5));
     top: calc(50vh - calc(13vw * 0.5));
   }
-}
-@media (orientation: horizontal) {
-  #logo {
-    width: 25vw;
-    height: 25vw;
+  h1{
     position: fixed;
-    left: calc(35vw - calc(25vw * 0.5));
-    top: calc(50vh - calc(25vw * 0.5));
+    left: calc(50vw - calc(10rem * 0.5));
+    top: 5vh;
+  }
+}
+@media (orientation: portrait) {
+  #logo {
+    width: 50vw;
+    height: 50vh;
+    position: fixed;
+    left: calc(50vw - calc(50vw * 0.5));
+    top: 5vh;
     /*width:20vw;*/
   }
 
   #text {
     position: fixed;
-    left: calc(65vw - calc(15vw * 0.5));
-    top: calc(50vh - calc(8.25vw * 0.5));
-    width: 15vw;
-    height: 8.25vw;
+    left: calc(50vw - calc(45vw * 0.5));
+    top: calc(60vh - calc(25vw * 0.5));
+    width: 45vw;
+    height: 25vw;
     transition-duration: 0.5s;
     cursor: pointer;
   }
 
   #text:hover {
-    width: 16vw;
-    height: 8.8vw;
-    left: calc(65vw - calc(16vw * 0.5));
-    top: calc(50vh - calc(8.8vw * 0.5));
+    width: 42vw;
+    height: 22vw;
+    left: calc(50vw - calc(42vw * 0.5));
+    top: calc(60vh - calc(22vw * 0.5));
+  }
+  h1{
+    position: fixed;
+    left: calc(50vw - calc(10rem * 0.5));
+    top: 5vh;
   }
 }
