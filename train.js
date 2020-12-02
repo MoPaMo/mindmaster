@@ -18,7 +18,7 @@ $(function () {
     }
     }, 100);
   }
-  countDown(20, function(){
-      console.log("Geschafft")
+  countDown(10, function(){
+      $(".text").html('<i class="fas fa-check"></i>')
   });
 });
