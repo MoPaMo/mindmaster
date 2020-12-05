@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>snap-test</title>
+</head>
+
+<body>
+    <svg id="svg" width="300" height="300"></svg>
+    <script src="snap.svg-min.js"></script>
+    <script>
+        var s = Snap("#svg");
+        var bigCircle = s.circle(150, 150, 100);
+        bigCircle.attr({
+    fill: "#bada55",
+    stroke: "#000",
+    strokeWidth: 5
+});
+    </script>
+
+</body>
+
+</html>
