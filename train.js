@@ -12,8 +12,9 @@ $(function () {
   }
 
   var s = Snap("#icon");
-  var transformer = Snap.selectAll("svg *:not(#bg-circ)");
-  transformer.animate({ fill: "#fff" }, 1000);
+  var transformer = Snap.selectAll("svg g *:not(#bg-circ)");
+  console.log(transformer)
+  transformer.animate({ fill: "#000" }, 1000);
   var bg = Snap.select("#bg-circ");
   bg.animate({ fill: "#B3876F" }, 1000);
   var text = s.text(50, 50, "60");
