@@ -1,24 +1,20 @@
 $(function () {
-  function setCircle(perc) {
-    if (perc <= 100) {
-      $("#a2").attr("r", 10 + (perc / 100) * 35);
-    } else {
-      throw perc + " is bigger than 100";
-    }
-  }
   function countDown(time, cback) {
     let i = 0;
     let inter = setInterval(function () {
-      $("#a2").attr("r", 10 + (i / time) * 35);
-      i += 0.1;
-      0;
       $(".time").html(time - Math.floor(i));
-      if (i > time){ clearInterval(inter);
-    cback()
-    }
+      i++;
+      if (i > time) {
+        clearInterval(inter);
+        cback();
+      }
     }, 100);
   }
-  countDown(10, function(){
-      $(".text").html('<i class="fas fa-check"></i>')
-  });
-});
+
+  var s = Snap("#icon");
+  var transformer = Snap.selectAll("svg *:not(.bg-circle)");
+  transformer.animate({ fill: "#fff" }, 1000);
+  var bg = Snap.select("#bg-circ");
+  bg.animate({ fill: "#B3876F" }, 1000);
+  var text = s.text(50, 50, "60");
+})
