@@ -46,6 +46,13 @@ body {
     left: calc(50vw - calc(10rem * 0.5));
     top: 5vh;
   }
+  #calendar{
+    position: fixed;
+    width:10vw;
+    height:6.6vw;
+    left: calc(50vw - calc(10vw * 0.5));
+    bottom: 5vh;
+  }
 }
 @media (orientation: portrait) {
   #logo {
