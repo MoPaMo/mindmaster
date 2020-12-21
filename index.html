@@ -104,8 +104,18 @@
     <script>
         $(function () {
             $("#text").click(function () {
-                $("#main").fadeOut(function () {
+                $("#main, #question, #calendar").fadeOut(function () {
                     window.open("train.html", "_SELF")
+                })
+            })
+            $("#question").click(function () {
+                $("#main, #question, #calendar").fadeOut(function () {
+                    window.open("question.html", "_SELF")
+                })
+            })
+            $("#calendar").click(function () {
+                $("#main, #question, #calendar").fadeOut(function () {
+                    window.open("table.html", "_SELF")
                 })
             })
         })

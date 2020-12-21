@@ -50,8 +50,27 @@ body {
     position: fixed;
     width:10vw;
     height:6.6vw;
-    left: calc(50vw - calc(10vw * 0.5));
+    left: calc(70vw - calc(10vw * 0.5));
     bottom: 5vh;
+    cursor:pointer;
+    transition-duration: .1s;
+  }
+  #calendar:hover {
+    width: 11vw;
+    height: 7.26vw;
+  }
+  #question{
+    position: fixed;
+    width:10vw;
+    height:6.6vw;
+    left: calc(30vw - calc(10vw * 0.5));
+    bottom: 5vh;
+    cursor:pointer;
+    transition-duration: .1s;
+  }
+  #question:hover {
+    width: 11vw;
+    height: 7.26vw;
   }
 }
 @media (orientation: portrait) {
@@ -60,14 +79,14 @@ body {
     height: 50vh;
     position: fixed;
     left: calc(50vw - calc(50vw * 0.5));
-    top: 5vh;
+    top: 15vh;
     /*width:20vw;*/
   }
 
   #text {
     position: fixed;
     left: calc(50vw - calc(45vw * 0.5));
-    top: calc(60vh - calc(25vw * 0.5));
+    top: calc(80vh - calc(25vw * 0.5));
     width: 45vw;
     height: 25vw;
     transition-duration: 0.5s;
@@ -78,7 +97,33 @@ body {
     width: 42vw;
     height: 22vw;
     left: calc(50vw - calc(42vw * 0.5));
-    top: calc(60vh - calc(22vw * 0.5));
+    top: calc(80vh - calc(22vw * 0.5));
+  }
+  #calendar{
+    position: fixed;
+    width:10vw;
+    height:6.6vw;
+    left: calc(70vw - calc(10vw * 0.5));
+    top: 5vh;
+    transition-duration: .1s;
+    cursor:pointer;
+  }
+  #calendar:hover{
+    width:11vw;
+    height:7.26vw;
+  }
+  #question{
+    position: fixed;
+    width:10vw;
+    height:6.6vw;
+    left: calc(30vw - calc(10vw * 0.5));
+    top: 5vh;
+    cursor:pointer;
+    transition-duration: .1s;
+  }
+  #question:hover{
+    width:11vw;
+    height:7.26vw;
   }
   h1{
     position: fixed;
