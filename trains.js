@@ -39,7 +39,7 @@ var x = {
       name: "Einführung",
       add: "Wir machen dich mit den Basics von Head 'n Shoulders bekannt",
     },
-    { excersises: ["kurze Mediation"], name: "Tag 2" },
+    { excersises: ["kurze Mediation"], name: "Tag 2", add:"Und los geht's mit der esten richtigen Einheit!" },
     { excersises: ["kurze Mediation"], name: "Tag 3" },
     { excersises: ["kurze Mediation"], name: "Tag 4" },
     { excersises: ["kurze Mediation"], name: "Tag 5" },
