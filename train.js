@@ -12,14 +12,11 @@ $(function () {
       }
     }, 100);
   }
-  function loadTrain(){
-    Snap.parse("svg/")
+  function loadTrain() {
+    Snap.parse("svg/");
   }
   function training(iter) {
-    loadTrain(trainToday[iter],
-      function(){
-
-      })
+    loadTrain(trainToday[iter], function () {});
   }
   $("h1").click(function () {
     open("./", "_SELF");
