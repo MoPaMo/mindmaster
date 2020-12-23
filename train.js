@@ -18,7 +18,7 @@ $(function () {
         clearInterval(inter);
         timecircle.animate({ r: 0 }, 1000);
         setTimeout(function () {
-          text.remove(), timecircle.remove();
+          text.remove();
           cback();
         }, 1000);
       }
@@ -32,26 +32,26 @@ $(function () {
     open("./", "_SELF");
   });
   function trainIter(iterator) {
-    var transformer = Snap.selectAll("svg#icon g *:not(.notremove)");
+    var transformer = Snap.selectAll("svg#icon g *:not(.notremove), svg#icon path:not(.notremove)");
     console.log(transformer);
     transformer.animate({ fill: "#000" }, 100);
     setTimeout(function () {
-      transformer.animate({ opacity: 0 }, 1000);
+      transformer.animate({ opacity: 0 }, 100);
 
       setTimeout(function () {
         transformer.remove();
-      }, 1000);
+      }, 100);
     }, 100);
     if (iterator < trainToday.excersises.length) {
       let excs = gti(trainToday.excersises[iterator]);
-      $("#trainname").html(excs.name)
-        $("#traininfo").html(excs.info)
-      let schnappp = Snap.parse(excs.svg)
-      s.append(schnappp)
-      $("#clicktostart").animate({bottom:"5rem"}, 100)
+      $("#trainname").html(excs.name);
+      $("#traininfo").html(excs.info);
+      let schnappp = Snap.parse(excs.svg);
+      s.append(schnappp);
+      $("#clicktostart").animate({ bottom: "2vh" }, 100);
       $("body,html").click(function () {
         $("body,html").off("click");
-      $("#clicktostart").animate({bottom:"-5rem"}, 100)
+        $("#clicktostart").animate({ bottom: "-5rem" }, 100);
 
         if (excs.time != "confirm" && Number.isFinite(excs.time)) {
           //is time
@@ -60,6 +60,9 @@ $(function () {
             trainIter(iterator + 1);
           });
         } else {
+          setTimeout(function(){
+            trainIter(iterator+1)}, 100)
+          
           console.log(excs.name + " ist confirm");
         }
       });
